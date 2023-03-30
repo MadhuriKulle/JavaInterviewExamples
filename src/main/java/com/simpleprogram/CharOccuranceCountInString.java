@@ -27,4 +27,23 @@ public class CharOccuranceCountInString {
 		}
 	}
 
+	public void duplicateCharnString() {
+		System.out.println("Hello, World!");
+        String str="abc abc abcd";
+        char strChar[] = str.toCharArray();
+        int count=1;
+        
+        for(int i=0; i<str.length(); i++){
+            count=1;
+            for(int j=i+1; j<str.length();j++){
+                if(strChar[i]==strChar[j] && strChar[i] != ' '){
+                    count++;
+                    strChar[j]='0';
+                }
+            }
+            if(count>1 && strChar[i] != '0'){
+                System.out.println(strChar[i]+" repeated "+count);
+            }
+        }
+	}
 }
