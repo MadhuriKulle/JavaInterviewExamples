@@ -42,7 +42,11 @@ public class CharOccuranceCountInString {
                 }
             }
             if(count>1 && strChar[i] != '0'){
+<<<<<<< HEAD
                 System.out.println(strChar[i]);
+=======
+                System.out.println(strChar[i]+" repeated "+count);
+>>>>>>> AllSimpleJavaPrograms
             }
         }
 	}
